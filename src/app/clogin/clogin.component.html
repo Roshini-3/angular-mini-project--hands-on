@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+    <h3 class="h">Login</h3>
+
+    <form [formGroup]="LoginForm" (ngSubmit)="userLogin(LoginForm)">
+      <!--Name input-->
+      <label class="form-label" for="loginName">Name</label>
+      <div class="form-outline mb-4">
+        <input
+          type="text"
+          id="loginPerson"
+          formControlName="text"
+          class="form-control"
+          placeholder="Enter Name"
+        />
+      </div>
+      <!-- Email input -->
+      <label class="form-label" for="loginName">Email</label>
+      <div class="form-outline mb-4">
+        <input
+          type="email"
+          id="loginName"
+          formControlName="email"
+          class="form-control"
+          placeholder="Enter Email"
+        />
+      </div>
+
+      <!-- Password input -->
+      <label class="form-label" for="loginName">Password</label>
+      <div class="form-outline mb-4">
+        <input
+          formControlName="password"
+          type="password"
+          id="loginPassword"
+          class="form-control"
+          placeholder="Enter Password"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mb-4">
+        Sign In
+      </button>
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>New User? <button class="btn btn-primary btn-block mb-4" routerLink="/login">Register</button></p>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
