@@ -28,8 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## To run the code 
 
-To execute the code please run the npm run backend command.
+To execute the code please run the [npm run backend] command.
 
-And also the run the server by the command npx json-server -- watch db.json.
+And also the run the server by the command [npx json-server -- watch db.json] .
 
-And open the page by running ng serve --open command.
+And open the page by running [ng serve --open] command.
